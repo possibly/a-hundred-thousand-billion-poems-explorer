@@ -28,7 +28,7 @@ Book.prototype.assembleSonnet = function(page_numbers){
     throw "Every sonnet must be 14 lines long. The input only specified "+page_numbers.length+" lines";
   }
 
-  assembledSonnet = page_numbers.map( function(page, line){
+  var assembledSonnet = page_numbers.map( function(page, line){
     return this._pages[page][line] 
   }, this );
 

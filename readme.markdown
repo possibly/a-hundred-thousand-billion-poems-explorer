@@ -1,10 +1,12 @@
-#One Hundred Thousand Billion Poems Explorer
-A nifty Node module for exploring [Stanley Chapman](https://en.wikipedia.org/wiki/Stanley_Chapman)'s English translation of [Raymond Queneau](https://en.wikipedia.org/wiki/Raymond_Queneau)'s famous set of poems entitled [*Cent mille milliards de poèmes*](https://en.wikipedia.org/wiki/Hundred_Thousand_Billion_Poems).
+#A Hundred Thousand Billion Poems Explorer
+A nifty Javascript module for exploring [Stanley Chapman](https://en.wikipedia.org/wiki/Stanley_Chapman)'s English translation of [Raymond Queneau](https://en.wikipedia.org/wiki/Raymond_Queneau)'s famous set of poems entitled [*Cent mille milliards de poèmes*](https://en.wikipedia.org/wiki/Hundred_Thousand_Billion_Poems).
 
 ##Loading the explorer
+This module is written in Javascript, you may load `index.js` into a browser or into some Javascript engine.
+
 You can `require` the explorer in your own project, like so:
 ```
-var book = require('[YOUR PATH HERE]')
+var book = require('./[YOUR PATH HERE]/a_hundred_thousand_billion_poems')
 ```
 
 ##API
