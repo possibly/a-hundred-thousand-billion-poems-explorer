@@ -45,4 +45,14 @@ Book.prototype.withLineNumbers = function(array){
   return lines;
 };
 
+Book.prototype.rhymeSchemeWords = function(array){
+  //Return an array of rhyme scheme words in the given sonnet or line set.
+  var rhymeSchemeWords = array.map( function(line){
+    var line_array = line.split(' ')
+    return line_array[line_array.length-1]
+  })
+
+  return rhymeSchemeWords
+}
+
 module.exports = new Book();

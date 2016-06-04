@@ -32,3 +32,6 @@ Usage would look like
 ```
 book.withLineNumbers(book.getSonnet(1))
 ```
+
+###rhymeSchemeWords(`Array`), returns `Array`
+Input an assembled sonnet or array of lines and receive the last word of each line.
