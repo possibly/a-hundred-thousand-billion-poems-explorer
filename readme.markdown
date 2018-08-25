@@ -1,7 +1,8 @@
-#A Hundred Thousand Billion Poems Explorer
+# A Hundred Thousand Billion Poems Explorer
+
 A nifty Javascript module for exploring [Stanley Chapman](https://en.wikipedia.org/wiki/Stanley_Chapman)'s English translation of [Raymond Queneau](https://en.wikipedia.org/wiki/Raymond_Queneau)'s famous set of poems entitled [*Cent mille milliards de poèmes*](https://en.wikipedia.org/wiki/Hundred_Thousand_Billion_Poems).
 
-##Loading the explorer
+## Loading the explorer
 This module is written in Javascript, you may load `index.js` into a browser or into some Javascript engine.
 
 You can `require` the explorer in your own project, like so:
@@ -9,17 +10,17 @@ You can `require` the explorer in your own project, like so:
 var book = require('./[YOUR PATH HERE]/a_hundred_thousand_billion_poems')
 ```
 
-##API
-###getSonnet(`sonnet_number`), returns `Array`
+## API
+### getSonnet(`sonnet_number`), returns `Array`
 Return one of the "original" sonnets as an array of strings. Index starts at 1, "the first sonnet".
 
-###getLines(`line_number`), returns `Array`
+### getLines(`line_number`), returns `Array`
 Return all of the lines that appear on the given `line_number` as an array of strings. Index starts at 1, "the first line".
 
-###assembleSonnet(`page_numbers`), returns `Array`
+### assembleSonnet(`page_numbers`), returns `Array`
 Input is an array containing Integers that indicate which page to take a line from. The position of the Integer in the array is the line number to take from the specified page. Index starts at 1 for the sonnet numbers.
 
-###withLineNumber(`Array`), returns `Object`
+### withLineNumber(`Array`), returns `Object`
 Returns an `Object` whose key/value pairs are the number of the line and the line itself, e.g.
 ```
 {
@@ -33,5 +34,5 @@ Usage would look like
 book.withLineNumbers(book.getSonnet(1))
 ```
 
-###rhymeSchemeWords(`Array`), returns `Array`
+### rhymeSchemeWords(`Array`), returns `Array`
 Input an assembled sonnet or array of lines and receive the last word of each line.
